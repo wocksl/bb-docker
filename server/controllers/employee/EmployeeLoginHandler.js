@@ -9,7 +9,7 @@ const EmployeeLoginHandler = (app, db) => {
     const password = req.body.empPassword;
 
     //query
-    sqlSelect = "SELECT * FROM emp_login WHERE userName= ? AND password=?";
+    const sqlSelect = "SELECT * FROM emp_login WHERE userName= ? AND password=?";
 
     //
     db.query(sqlSelect, [userName, password], (err, result) => {

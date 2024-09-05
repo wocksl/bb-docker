@@ -6,8 +6,7 @@ const UserLoginHandler = (app, db) => {
     const userPassword = req.body.userPassword;
 
     //query
-    const sqlSelect =
-      "SELECT * FROM user_login WHERE userUserName = ? AND userPassword = ?";
+    const sqlSelect = "SELECT * FROM user_login WHERE userUserName = ? AND userPassword = ?";
 
     //
     db.query(sqlSelect, [userUserName, userPassword], (err, result) => {
