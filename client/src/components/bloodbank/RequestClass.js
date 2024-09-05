@@ -64,7 +64,7 @@ export default class RequestClass extends Component {
   };
 
   request = () => {
-    Axios.post("http://localhost:3001/request", {
+    Axios.post("http://52.79.66.133:3001/request", {
       blood_group: this.state.req_blood,
       unit: this.state.req_unit,
     }).then((response)=>{

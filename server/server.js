@@ -34,9 +34,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
 
 var db = mysql.createConnection({
-  host: "192.168.0.12",
-  user: "admin",
-  password: "Password@123",
+  host: "database-1.cluster-cnq6cigc6ady.ap-northeast-2.rds.amazonaws.com",
+  user: "root",
+  password: "j>0G6a:9C*uCHvFCBaEV5}E!E_{.",
   database: "bbms",
 
 });

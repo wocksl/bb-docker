@@ -13,7 +13,7 @@ const EmployeeRegister = () => {
 
   const submitEmployeeRegister = () => {
     //post-url
-    const regurl = "http://localhost:3001/reg/emp";
+    const regurl = "http://52.79.66.133:3001/reg/emp";
     //post-req
     Axios.post(regurl, {
       empName: empName,

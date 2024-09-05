@@ -12,7 +12,7 @@ const Search = () => {
 
   //search for blood
   useEffect(() => {
-    Axios.post("http://localhost:3001/home/search", {
+    Axios.post("http://52.79.66.133:3001/home/search", {
       place: place,
       blood: blood,
     }).then((response) => {
