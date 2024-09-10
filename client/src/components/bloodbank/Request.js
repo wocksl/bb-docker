@@ -11,7 +11,7 @@ const Request = () => {
 
   //useEffect call
   useEffect(() => {
-    Axios.get("http://52.79.66.133:3001/home").then((response) => {
+    Axios.get("http://3.39.227.69:3001/home").then((response) => {
       //console.log(response.data);
       setbloodTable(response.data);
     });

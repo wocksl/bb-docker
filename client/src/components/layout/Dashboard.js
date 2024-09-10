@@ -15,7 +15,7 @@ const Dashboard = () => {
   //useEffect call
   useEffect(() => {
     axios
-      .get("http://52.79.66.133:3001/home")
+      .get("http://3.39.227.69:3001/home")
       .then(function (response) {
         //console.log(response);
         setbloodTable(response.data)

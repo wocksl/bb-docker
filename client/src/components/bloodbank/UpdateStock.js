@@ -12,7 +12,7 @@ const UpdateStock = () => {
 
   //useEffect call
   useEffect(() => {
-    Axios.get("http://52.79.66.133:3001/login/emp/ub", (req, res) => {}).then(
+    Axios.get("http://3.39.227.69:3001/login/emp/ub", (req, res) => {}).then(
       (response) => {
         //console.log(response.data);
         setbloodTable(response.data);
@@ -21,7 +21,7 @@ const UpdateStock = () => {
   });
   //updateBloodStock
   const ubStock = (b_id) => {
-    Axios.put("http://52.79.66.133:3001/login/emp/ub/update", {
+    Axios.put("http://3.39.227.69:3001/login/emp/ub/update", {
       b_id: b_id,
       unitUpdate: unitUpdate,
     }).then(setunitUpdate(""));
