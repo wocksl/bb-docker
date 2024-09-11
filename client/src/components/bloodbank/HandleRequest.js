@@ -9,7 +9,7 @@ const HandleRequest = () => {
   const [RequestTable, setRequestTable] = useState([]);
 
   useEffect(() => {
-    Axios.get("http://3.39.227.69:3001/login/emp/hr").then((response) => {
+    Axios.get("/api/login/emp/hr").then((response) => {
       if (response) {
         setRequestTable(response.data);
       } else {
@@ -21,7 +21,7 @@ const HandleRequest = () => {
   //
   const serveRequest = (req_id) => {
     //console.log(`request id : ${req_id}`);
-const delUrl = "http://3.39.227.69:3001/login/emp/hr/"+req_id;
+const delUrl = "/api/login/emp/hr/"+req_id;
     Axios.delete( delUrl).then((response) => {
       if (response.data.message) {
         alert(response.data.message);

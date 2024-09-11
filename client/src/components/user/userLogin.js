@@ -9,7 +9,7 @@ const UserLogin = () => {
   const [userPassword, setuserPassword] = useState("");
 
   const userLoginCheck = () => {
-    Axios.post("http://3.39.227.69:3001/login/usr", {
+    Axios.post("/api/login/usr", {
       userUserName: userUserName,
       userPassword: userPassword,
     }).then((response) => {

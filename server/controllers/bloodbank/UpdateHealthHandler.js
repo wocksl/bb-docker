@@ -1,6 +1,6 @@
 //moduleexport
 const UpdateHealthHandler = (app, db) => {
-  app.post("/login/emp/uh", (req, res) => {
+  app.post("/api/login/emp/uh", (req, res) => {
     //variables
     const user_id = req.body.userId;
 
@@ -18,7 +18,7 @@ const UpdateHealthHandler = (app, db) => {
   });
 
   //update request
-  app.put("/login/emp/uh", (req, res) => {
+  app.put("/api/login/emp/uh", (req, res) => {
     //variables
     const user_id = req.body.user_id;
     const userVitals = req.body.userVitals;

@@ -9,7 +9,7 @@ const EmployeeLogin = () => {
 
   //onclick function
   const empLoginCheck = () => {
-    Axios.post("http://3.39.227.69:3001/login/emp", {
+    Axios.post("/api/login/emp", {
       empUserName: empUserName,
       empPassword: empPassword,
     }).then((response) => {

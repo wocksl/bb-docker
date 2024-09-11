@@ -16,7 +16,7 @@ const UserRegister = () => {
   const [userBloodGroup, setuserBloodGroup] = useState("");
 
   const submituserRegister = () => {
-    const regurl = "http://3.39.227.69:3001/reg/usr";
+    const regurl = "/api/reg/usr";
     Axios.post(regurl, {
       userFName: userFName,
       userAge: userAge,
