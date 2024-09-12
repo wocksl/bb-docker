@@ -6,6 +6,9 @@ WORKDIR /app
 # 애플리케이션 파일 복사
 COPY . .
 
+# AWS SDK 설치 및 다른 종속성 설치
+RUN npm install aws-sdk
+
 # 종속성 설치
 RUN npm install
 
